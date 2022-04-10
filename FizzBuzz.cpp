@@ -1,18 +1,5 @@
-#include<iostream>
-#include<vector>
-#include<string>
-using namespace std;
- vector<string> fizzBuzz(int n);
-int main(){
-    int n;
-    cin>>n;
-    vector<string> answer = fizzBuzz(n);
-    for(int i =0;i< answer.size();i++){
-        cout<<answer.at(i)<<" ";
-    }
-}
- vector<string>  fizzBuzz(int n){
-     vector <string> answer;
+   vector<string> fizzBuzz(int n) {
+       vector <string> answer;
      for(int i=1; i <= n;i++){
          if(i % 3 == 0 && i % 5 ==0 ){
              answer.push_back("FizzBuzz");
@@ -26,4 +13,4 @@ int main(){
          }
      }
      return answer;
-}
+    }
